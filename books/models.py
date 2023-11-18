@@ -26,7 +26,7 @@ class Review (models.Model):
     rating = models.IntegerField(validators=[MaxValueValidator(5), MinValueValidator(1)])
 
     def __str__(self):
-        return self.book
+        return str(self.book)
 
 
 
