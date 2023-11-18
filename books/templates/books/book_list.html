@@ -1,0 +1,10 @@
+
+
+<h3>Blog : </h3>
+<ul>
+    {% for book in object_list %}
+
+    <li><a href="/books/{{ book.id }}">{{ book }}</a></li>
+
+    {% endfor %}
+</ul>
